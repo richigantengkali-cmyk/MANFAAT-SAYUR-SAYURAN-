@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manfaat Ajaib Sayuran Hijau dan Lainnya</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1>🌿 Manfaat Ajaib Beberapa Sayuran Pilihan 🥕</h1>
+        <p>Ketahui kekuatan super yang tersembunyi dalam setiap gigitan!</p>
+    </header>
+
+    <main>
+        <div class="card-container">
+            <section class="vegetable-card" id="wortel">
+                <h2>Wortel (Carrot)</h2>
+                <div class="content">
+                    <p>Wortel dikenal luas karena kandungan **Beta-Karoten** yang tinggi, yang diubah menjadi Vitamin A dalam tubuh. Vitamin A sangat penting untuk kesehatan mata, fungsi kekebalan tubuh, dan pertumbuhan sel.</p>
+                    <ul>
+                        <li><span class="highlight">Kesehatan Mata:</span> Kaya akan lutein dan zeaxanthin.</li>
+                        <li><span class="highlight">Antioksidan Kuat:</span> Membantu melawan radikal bebas.</li>
+                        <li><span class="highlight">Pencernaan Sehat:</span> Sumber serat yang baik.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="vegetable-card" id="kentang">
+                <h2>Kentang (Potato)</h2>
+                <div class="content">
+                    <p>Kentang adalah sumber nutrisi yang padat, kaya akan kalium, Vitamin C, dan Vitamin B6.</p>
+                    <ul>
+                        <li><span class="highlight">Sumber Energi:</span> Menyediakan karbohidrat kompleks.</li>
+                        <li><span class="highlight">Tekanan Darah:</span> Kandungan **Kalium**nya tinggi.</li>
+                        <li><span class="highlight">Kekebalan Tubuh:</span> Menyumbang asupan Vitamin C.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="vegetable-card" id="brokoli">
+                <h2>Brokoli (Broccoli)</h2>
+                <div class="content">
+                    <p>Brokoli mengandung senyawa **sulforaphane** yang memiliki sifat anti-kanker dan mendetoksifikasi.</p>
+                    <ul>
+                        <li><span class="highlight">Detoksifikasi:</span> Membantu hati dalam proses detoksifikasi.</li>
+                        <li><span class="highlight">Kesehatan Jantung:</span> Kaya akan serat dan kalium.</li>
+                        <li><span class="highlight">Tulang Kuat:</span> Sumber Vitamin K dan Kalsium yang sangat baik.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="vegetable-card" id="sawi">
+                <h2>Sawi (Mustard Greens)</h2>
+                <div class="content">
+                    <p>Sawi menawarkan dosis besar Vitamin K dan A, serta antioksidan yang melindungi sel-sel tubuh.</p>
+                    <ul>
+                        <li><span class="highlight">Vitamin K:</span> Penting untuk pembekuan darah.</li>
+                        <li><span class="highlight">Peradangan:</span> Mengandung senyawa anti-inflamasi.</li>
+                        <li><span class="highlight">Sistem Kekebalan:</span> Tinggi Vitamin C.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="vegetable-card" id="bayam">
+                <h2>Bayam (Spinach)</h2>
+                <div class="content">
+                    <p>Bayam adalah pembangkit tenaga gizi, sumber Vitamin K, A, C, dan **Folat** yang sangat baik.</p>
+                    <ul>
+                        <li><span class="highlight">Pembentukan Darah:</span> Sumber folat dan zat besi.</li>
+                        <li><span class="highlight">Kesehatan Otak:</span> Antioksidan yang memperlambat penurunan kognitif.</li>
+                        <li><span class="highlight">Penguatan Otot:</span> Mengandung senyawa yang dapat meningkatkan efisiensi otot.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Nikmati sayuran Anda untuk hidup yang lebih sehat! 🌱</p>
+    </footer>
+</body>
+<style>/* Import font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    /* Palet Warna Cerah */
+    --color-primary: #1B5E20; /* Hijau Tua */
+    --color-secondary: #FF6F00; /* Oranye Cerah */
+    --color-background: #E8F5E9; /* Hijau Mint Sangat Muda */
+    --color-text: #212121; /* Hitam Gelap */
+    --color-card-bg: #FFFFFF; 
+    --color-shadow: rgba(0, 0, 0, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    /* Background Gradient Menarik */
+    background: linear-gradient(135deg, #DCEDC8 0%, #A5D6A7 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* --- ANIMASI KEYFRAMES --- */
+/* Animasi Pemuatan Awal */
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Animasi Fokus pada Kartu */
+@keyframes shine {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+/* ------------------------- */
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 25px;
+    background-color: var(--color-card-bg);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px var(--color-shadow);
+    animation: slideIn 0.8s ease-out;
+}
+
+header h1 {
+    color: var(--color-primary);
+    font-size: 2.8em;
+    margin-bottom: 5px;
+}
+
+/* KARTU SAYURAN */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.vegetable-card {
+    background-color: var(--color-card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    flex: 1 1 300px; 
+    max-width: 380px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    
+    /* Animasi awal (muncul perlahan) */
+    opacity: 0;
+    animation: slideIn 0.6s ease-out forwards;
+}
+
+/* Penundaan animasi untuk setiap kartu agar muncul berurutan */
+#wortel { animation-delay: 0.1s; }
+#kentang { animation-delay: 0.2s; }
+#brokoli { animation-delay: 0.3s; }
+#sawi { animation-delay: 0.4s; }
+#bayam { animation-delay: 0.5s; }
+
+
+.vegetable-card:hover {
+    transform: translateY(-15px) rotateZ(-1deg); /* Efek Hover Lebih Dinamis */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.vegetable-card h2 {
+    color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.vegetable-card p {
+    margin-bottom: 15px;
+}
+
+.vegetable-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.vegetable-card ul li {
+    padding: 8px 0;
+    border-bottom: 1px dotted #BDBDBD;
+    position: relative;
+    padding-left: 25px;
+}
+
+.vegetable-card ul li::before {
+    content: "✅"; 
+    position: absolute;
+    left: 0;
+    font-size: 0.9em;
+}
+
+.highlight {
+    font-weight: 700;
+    color: var(--color-primary);
+    background: linear-gradient(90deg, #FFF9C4, #FFEE58); /* Efek Warna Kuning */
+    padding: 2px 4px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 12px;
+    font-weight: 600;
+    animation: slideIn 0.8s ease-out 0.6s both;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    .vegetable-card {
+        padding: 25px;
+    }
+}
+</style><script>/*Here write your javascript code*/</script></html>
